@@ -6,7 +6,6 @@
 
   <include name="yocto.xml" />
 
-  <project name="rockx" path="external/rockx" revision="master"/>
   <project name="rkmedia" path="external/rkmedia" revision="master"/>
   <project name="rkmedia" path="npu/external/rkmedia" revision="master"/>
   <project name="wifiAutoSetup" path="external/wifiAutoSetup" revision="master"/>
@@ -15,7 +14,6 @@
   <project name="deviceio_release" path="external/deviceio_release" revision="master"/>
   <project name="chromium" path="external/chromium" revision="master"/>
   <project name="avb" path="external/avb" revision="master"/>
-  <project name="WakeWordAgent" path="external/wakeWordAgent" revision="master"/>
   <project name="LocalPlayer" path="external/LocalPlayer" revision="master"/>
   <project name="RKNPUTools" path="external/RKNPUTools" revision="rk/rk33/mid/8.1/develop"/>
   <project name="libdrm-rockchip" path="external/libdrm" revision="rk33/mid/9.0/develop"/>
@@ -40,7 +38,6 @@
     <linkfile dest="npu/Makefile" src="build/Makefile"/>
     <linkfile dest="npu/envsetup.sh" src="build/envsetup.sh"/>
   </project>
-  <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="master"/>
   <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="master"/>
   <project name="camera_engine_rkisp" path="npu/external/camera_engine_rkisp" revision="master"/>
   <project name="demo" path="app/demo" revision="master"/>
@@ -48,13 +45,13 @@
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
-    <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399pro/BoardConfig.mk"/>
+    <linkfile dest="device/rockchip/.target_product" src="rk3399pro"/>
   </project>
   <project name="device-custom" path="npu/device/rockchip" revision="master">
     <linkfile dest="npu/mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="npu/build.sh" src="common/build.sh"/>
     <linkfile dest="npu/rkflash.sh" src="common/rkflash.sh"/>
-    <linkfile dest="npu/device/rockchip/.BoardConfig.mk" src="rk3399pro-npu/BoardConfig.mk"/>
+    <linkfile dest="npu/device/rockchip/.target_product" src="rk3399pro"/>
   </project>
   <project name="distro" path="distro" revision="master"/>
   <project name="download" path="distro/download" revision="master"/>
@@ -64,11 +61,9 @@
   <project name="ffmpeg" path="external/ffmpeg" revision="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="npu/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
-  <project name="gst-plugins-rockchip" path="external/gst-plugins-rockchip" revision="master"/>
-  <project name="gstreamer-camera" path="external/gstreamer-camera" revision="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="master"/>
-  <project name="kernel" path="kernel" revision="develop-4.4"/>
-  <project name="kernel" path="npu/kernel" revision="stable-4.4-rk3399pro_npu-pcie-linux"/>
+  <project name="rockchip" path="kernel" revision="develop-4.4"/>
+  <project name="rockchip" path="npu/kernel" revision="stable-4.4-rk3399pro_npu-pcie-linux"/>
   <project name="libmali" path="external/libmali" revision="master"/>
   <project name="linux-rga" path="external/linux-rga" revision="master"/>
   <project name="linux-rga" path="npu/external/linux-rga" revision="master"/>
